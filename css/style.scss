@@ -1,0 +1,216 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+
+// variables - fonts
+
+$headings-font:             'Avenir LT Std 85 Heavy', sans-serif;
+$body-font:                 'Avenir Book', sans-serif;
+
+
+
+@font-face {
+font-family: 'Avenir LT Std 85 Heavy';
+font-style: normal;
+font-weight: normal;
+src: url('fonts/AvenirLTStd-Heavy.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Avenir Book';
+font-style: normal;
+font-weight: normal;
+src: url('fonts/AvenirLTStd-Book.woff') format('woff');
+}
+
+  
+$darkBlue:  #272D6A;
+$red: #FC3C2D;
+
+.margin-5 {
+  margin-top: 50px;
+}
+
+.margin-2 {
+  margin-top: 20px;
+}
+
+
+.background--hero {
+  background-size: cover;
+  height: 100vh; 
+  background-image: url('http://res.cloudinary.com/billiegray-com/image/upload/q_100/v1518746667/barhero1_dpzicg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: $red;
+}
+
+.background--menu {
+  background-size: cover;
+  height: 105vh; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+
+.background--about {
+  background-size: cover;
+  height: 55vh; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-color: $darkBlue;
+}
+
+
+.background--map {
+  background-size: cover;
+  background-image: url('http://res.cloudinary.com/billiegray-com/image/upload/q_100/v1518746668/theclam_w7zb35.png');
+  height: 60vh; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-color: $darkBlue;
+}
+ 
+ .background--venue {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-color: $red;
+}
+
+.navbar-fixed-top {
+  background: transparent;
+  border-bottom: none;
+}
+
+
+.main-nav {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  text-decoration: none;
+  font-family: $body-font;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-top:10px;
+  a:hover {
+    text-decoration: none;
+    color: pink;
+  }
+  a:focus{
+    text-decoration: none;
+    color: pink;
+  }
+}
+
+
+h1 {
+    font-family: $headings-font;
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+}
+
+h2 {
+    font-family: $headings-font;
+    font-size: 24px;
+    color: white;
+}
+
+a {
+  color: #FEBD36;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.about-text p {
+  color: white;
+  font-size: 16px;
+  font-family: $body-font;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  margin-top: 30vh;
+  p {
+    color: white;
+    font-size: 16px;
+    font-family: $body-font;
+    margin-top: 100px;
+  }
+}
+
+
+.img-bar_menu {
+  height: 85vh;
+  margin: 20px 0px 10px;
+}
+
+.img-about{
+  height: 25px;
+}
+
+.img-venue img{
+  width: 100%;
+  margin: 20px 0px 40px;
+}
+
+.address-details {
+  position: relative;
+  top: 50px;
+  right: 20px;
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  p {
+  color: $darkBlue;
+  font-size: 16px;
+  font-family: $body-font;
+  }
+  h2 {
+    color: Pink;
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .background--hero {
+    background-image: url('https://res.cloudinary.com/billiegray-com/image/upload/q_100/v1518746896/barmobile_blid6m.jpg');
+    background-position: center;
+    background-size: 85%;
+  }
+
+  .background--about {
+    height: 700px; 
+  }
+
+  .background--map {
+    background-image: url('http://res.cloudinary.com/billiegray-com/image/upload/q_100/v1518746663/addressmob_pjy8yw.png');
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  .img-bar_menu {
+    height: 65vh;
+    margin: 20px 0px;
+  }
+
+  .hero-text {
+    margin-top: 50vh;
+  }
+  .background--menu {
+    height: 90vh;
+  }
+  .background--about {
+    height: 80vh;
+  }
+}
+
+
+
